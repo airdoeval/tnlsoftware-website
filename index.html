@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TNL Software LLC</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1115;
+    --panel: #171a21;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+    --accent: #5b8cff;
+    --border: #2a2e37;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #1b1f27;
+      --muted: #5b6270;
+      --accent: #2f5fd6;
+      --border: #e3e6eb;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    margin-bottom: 48px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+  section {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  .apps-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .apps-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .apps-list li:last-child {
+    border-bottom: none;
+  }
+  .app-name {
+    font-weight: 600;
+  }
+  .app-status {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 16px;
+  }
+  dt {
+    color: var(--muted);
+  }
+  dd {
+    margin: 0;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>TNL Software LLC</h1>
+    <p class="tagline">Custom software development &amp; mobile apps.</p>
+  </header>
+
+  <section>
+    <h2>Apps</h2>
+    <ul class="apps-list">
+      <li>
+        <div class="app-name">Crazy Train</div>
+        <div class="app-status">Coming soon to Google Play</div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Company</h2>
+    <dl>
+      <dt>Entity</dt>
+      <dd>TNL Software LLC &mdash; Texas limited liability company</dd>
+      <dt>Contact</dt>
+      <dd><a href="mailto:aaron@planetrichardson.net">aaron@planetrichardson.net</a></dd>
+      <dt>Location</dt>
+      <dd>Wichita Falls, TX</dd>
+      <dt>Privacy</dt>
+      <dd><a href="privacy.html">Privacy Policy</a></dd>
+    </dl>
+  </section>
+
+  <footer>
+    &copy; 2026 TNL Software LLC. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
